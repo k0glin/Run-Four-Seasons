@@ -10,27 +10,23 @@ import UIKit
 class runTypesViewController: UIViewController {
     
 //    Declaring a new array to store the run type
-    var runTypeArray: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
-    //    Function that activates when the button is touched
-    //    when activated adds "speed" to the runTypeArray
-    @IBAction func speedBtn(_ sender: Any) {
-        runTypeArray.append("speed")
-
-    }
-    //    Function that activates when the button is touched
-    //    when activated adds "long" to the runTypeArray
-    @IBAction func longBtn(_ sender: Any) {
-        runTypeArray.append("long")
-    }
-//    Function that activates when the button is touched
-//    when activated adds "recovery" to the runTypeArray
-    @IBAction func recoveryBtn(_ sender: Any) {
-        runTypeArray.append("recovery")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "speedSegue"{
+            let destinationController = segue.destination as! climateViewController
+            destinationController.runType.append("speed")
+        }
+        else if segue.identifier == "longSegue"{
+            let destinationController = segue.destination as! climateViewController
+            destinationController.runType.append("long")
+        }
+        else if segue.identifier == "recoverySegue"{
+            let destinationController = segue.destination as! climateViewController
+            destinationController.runType.append("recovery")
+        }
     }
 }

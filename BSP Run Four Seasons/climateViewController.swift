@@ -11,8 +11,11 @@ class climateViewController: UIViewController {
 //    Variable for the text field to recive the imput of the temprature
     @IBOutlet weak var temperatureField: UITextField!
     
+    
 //    Array to store cloths for displaying at the final screen
     var resultArray: [String] = []
+    
+    var runType: [String] = []
     
 //    Declaration of each variable of the climate statistics
     var wind = 0
@@ -95,12 +98,24 @@ class climateViewController: UIViewController {
             break
         }
     }
-    
 //   Function that activates when the user hits the calculate button
     @IBAction func calculateBtn(_ sender: Any) {
         
 //        converting the value from the temperature field from text to a double
-        let tempValue = Double(temperatureField.text!)
+        var tempValue = Double(temperatureField.text!)
+        
+        func runTemperatureModify(){
+            if runType.contains("speed"){
+                return tempValue = tempValue! + 2
+            }
+            else if runType.contains("long"){
+                return tempValue = tempValue!
+            }
+            else if runType.contains("recovery"){
+                return tempValue = tempValue! - 2
+            }
+        }
+    
         
 //        function to check if it should append "Sunglasses" to the resultArray
         func sunGlasses(){
@@ -199,12 +214,12 @@ class climateViewController: UIViewController {
 //       function to check if it should append "Jacket" to the resultArray
         func jacket(){
             if (wind == 0){
-                if(tempValue! < 5){
+                if(tempValue! < 4){
                     return resultArray.append("Jacket")
                 }
             }
             else if (wind == 1){
-                if(tempValue! < 7){
+                if(tempValue! < 6){
                     return resultArray.append("Jacket")
                 }
             }
@@ -237,32 +252,38 @@ class climateViewController: UIViewController {
 //       function to check if it should append "Long Sleeve Shirt" to the resultArray
         func longSleeveShirt(){
             if (wind == 0){
-                if(tempValue! < 5){
+                if(tempValue! < 6){
                     return resultArray.append("Long Sleeve Shirt")
                 }
             }
             else if (wind == 1){
-                if(tempValue! < 11){
+                if(tempValue! < 12){
                     return resultArray.append("Long Sleeve Shirt")
                 }
             }
             else if (wind == 2){
-                if(tempValue! < 14){
+                if(tempValue! < 15){
                     return resultArray.append("Long Sleeve Shirt")
                 }
             }
         }
-            
+        
 //        activating all the cloths functions from above
-        sunGlasses()
-        cap()
-        beanie()
-        gloves()
-        shorts()
-        pants()
-        jacket()
-        tShirt()
-        longSleeveShirt()
+        if (tempValue! < 99 && tempValue! > -15){
+            runTemperatureModify()
+            sunGlasses()
+            cap()
+            beanie()
+            gloves()
+            shorts()
+            pants()
+            jacket()
+            tShirt()
+            longSleeveShirt()
+        }
+        else{
+            resultArray.append("Please enter a Valid temperature.")
+        }
     }
     
 //    Function to when the user clicks outside of the keyboard when writing in the textfield the keyboard disapear
