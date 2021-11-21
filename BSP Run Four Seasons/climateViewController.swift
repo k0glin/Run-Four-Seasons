@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class climateViewController: UIViewController {
+class climateViewController: UIViewController, UITextFieldDelegate {
     
 //    Variable for the text field to recive the imput of the temprature
     @IBOutlet weak var temperatureField: UITextField!
@@ -25,8 +25,16 @@ class climateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        temperatureField.delegate = self
     }
-
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let allowedCharacters = "-+1234567890."
+        let allowedCharacterSets = CharacterSet(charactersIn: allowedCharacters)
+        let typedCharactersSet = CharacterSet(charactersIn: string)
+        
+        return allowedCharacterSets.isSuperset(of: typedCharactersSet)
+    }
 
 //    Function to check when the segment changes the selected option and assing a different value for the wind variable
     @IBAction func windSegmentChanges(_ sender: UISegmentedControl) {
@@ -269,7 +277,10 @@ class climateViewController: UIViewController {
         }
         
 //        activating all the cloths functions from above
-        if (tempValue! < 99 && tempValue! > -15){
+        if temperatureField.text == "" {
+            resultArray.append("Please enter the temperature value")
+        }
+        else if (tempValue! < 41 && tempValue! > -26){
             runTemperatureModify()
             sunGlasses()
             cap()
@@ -282,7 +293,7 @@ class climateViewController: UIViewController {
             longSleeveShirt()
         }
         else{
-            resultArray.append("Please enter a Valid temperature.")
+            resultArray.append("Please enter a valid temperature.")
         }
     }
     
