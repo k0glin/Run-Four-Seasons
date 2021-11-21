@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AE80A57274147AA009B5717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A56274147AA009B5717 /* AppDelegate.swift */; };
+		8AE80A59274147AA009B5717 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A58274147AA009B5717 /* SceneDelegate.swift */; };
+		8AE80A5E274147AA009B5717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE80A5C274147AA009B5717 /* Main.storyboard */; };
+		8AE80A60274147AA009B5717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE80A5F274147AA009B5717 /* Assets.xcassets */; };
+		8AE80A63274147AA009B5717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE80A61274147AA009B5717 /* LaunchScreen.storyboard */; };
+		8AE80A6E274147AA009B5717 /* BSP_Run_Four_SeasonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A6D274147AA009B5717 /* BSP_Run_Four_SeasonsTests.swift */; };
+		8AE80A78274147AA009B5717 /* BSP_Run_Four_SeasonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A77274147AA009B5717 /* BSP_Run_Four_SeasonsUITests.swift */; };
+		8AE80A7A274147AA009B5717 /* BSP_Run_Four_SeasonsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A79274147AA009B5717 /* BSP_Run_Four_SeasonsUITestsLaunchTests.swift */; };
+		8AE80A8727414DDF009B5717 /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A8627414DDF009B5717 /* resultsViewController.swift */; };
+		8AE80A8927414E1F009B5717 /* runTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A8827414E1F009B5717 /* runTypesViewController.swift */; };
+		8AE80A8B27414E3D009B5717 /* climateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80A8A27414E3D009B5717 /* climateViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AE80A6A274147AA009B5717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AE80A4B274147AA009B5717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AE80A52274147AA009B5717;
+			remoteInfo = "BSP Run Four Seasons";
+		};
+		8AE80A74274147AA009B5717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AE80A4B274147AA009B5717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AE80A52274147AA009B5717;
+			remoteInfo = "BSP Run Four Seasons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8AE80A53274147AA009B5717 /* BSP Run Four Seasons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSP Run Four Seasons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE80A56274147AA009B5717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AE80A58274147AA009B5717 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8AE80A5D274147AA009B5717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AE80A5F274147AA009B5717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AE80A62274147AA009B5717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AE80A64274147AA009B5717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE80A69274147AA009B5717 /* BSP Run Four SeasonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BSP Run Four SeasonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE80A6D274147AA009B5717 /* BSP_Run_Four_SeasonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSP_Run_Four_SeasonsTests.swift; sourceTree = "<group>"; };
+		8AE80A73274147AA009B5717 /* BSP Run Four SeasonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BSP Run Four SeasonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE80A77274147AA009B5717 /* BSP_Run_Four_SeasonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSP_Run_Four_SeasonsUITests.swift; sourceTree = "<group>"; };
+		8AE80A79274147AA009B5717 /* BSP_Run_Four_SeasonsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSP_Run_Four_SeasonsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AE80A8627414DDF009B5717 /* resultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
+		8AE80A8827414E1F009B5717 /* runTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runTypesViewController.swift; sourceTree = "<group>"; };
+		8AE80A8A27414E3D009B5717 /* climateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climateViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AE80A50274147AA009B5717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80A66274147AA009B5717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80A70274147AA009B5717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AE80A4A274147AA009B5717 = {
+			isa = PBXGroup;
+			children = (
+				8AE80A55274147AA009B5717 /* BSP Run Four Seasons */,
+				8AE80A6C274147AA009B5717 /* BSP Run Four SeasonsTests */,
+				8AE80A76274147AA009B5717 /* BSP Run Four SeasonsUITests */,
+				8AE80A54274147AA009B5717 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AE80A54274147AA009B5717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80A53274147AA009B5717 /* BSP Run Four Seasons.app */,
+				8AE80A69274147AA009B5717 /* BSP Run Four SeasonsTests.xctest */,
+				8AE80A73274147AA009B5717 /* BSP Run Four SeasonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AE80A55274147AA009B5717 /* BSP Run Four Seasons */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80A56274147AA009B5717 /* AppDelegate.swift */,
+				8AE80A58274147AA009B5717 /* SceneDelegate.swift */,
+				8AE80A8627414DDF009B5717 /* resultsViewController.swift */,
+				8AE80A8A27414E3D009B5717 /* climateViewController.swift */,
+				8AE80A8827414E1F009B5717 /* runTypesViewController.swift */,
+				8AE80A5C274147AA009B5717 /* Main.storyboard */,
+				8AE80A5F274147AA009B5717 /* Assets.xcassets */,
+				8AE80A61274147AA009B5717 /* LaunchScreen.storyboard */,
+				8AE80A64274147AA009B5717 /* Info.plist */,
+			);
+			path = "BSP Run Four Seasons";
+			sourceTree = "<group>";
+		};
+		8AE80A6C274147AA009B5717 /* BSP Run Four SeasonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80A6D274147AA009B5717 /* BSP_Run_Four_SeasonsTests.swift */,
+			);
+			path = "BSP Run Four SeasonsTests";
+			sourceTree = "<group>";
+		};
+		8AE80A76274147AA009B5717 /* BSP Run Four SeasonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80A77274147AA009B5717 /* BSP_Run_Four_SeasonsUITests.swift */,
+				8AE80A79274147AA009B5717 /* BSP_Run_Four_SeasonsUITestsLaunchTests.swift */,
+			);
+			path = "BSP Run Four SeasonsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AE80A52274147AA009B5717 /* BSP Run Four Seasons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE80A7D274147AA009B5717 /* Build configuration list for PBXNativeTarget "BSP Run Four Seasons" */;
+			buildPhases = (
+				8AE80A4F274147AA009B5717 /* Sources */,
+				8AE80A50274147AA009B5717 /* Frameworks */,
+				8AE80A51274147AA009B5717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSP Run Four Seasons";
+			productName = "BSP Run Four Seasons";
+			productReference = 8AE80A53274147AA009B5717 /* BSP Run Four Seasons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AE80A68274147AA009B5717 /* BSP Run Four SeasonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE80A80274147AA009B5717 /* Build configuration list for PBXNativeTarget "BSP Run Four SeasonsTests" */;
+			buildPhases = (
+				8AE80A65274147AA009B5717 /* Sources */,
+				8AE80A66274147AA009B5717 /* Frameworks */,
+				8AE80A67274147AA009B5717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE80A6B274147AA009B5717 /* PBXTargetDependency */,
+			);
+			name = "BSP Run Four SeasonsTests";
+			productName = "BSP Run Four SeasonsTests";
+			productReference = 8AE80A69274147AA009B5717 /* BSP Run Four SeasonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AE80A72274147AA009B5717 /* BSP Run Four SeasonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE80A83274147AA009B5717 /* Build configuration list for PBXNativeTarget "BSP Run Four SeasonsUITests" */;
+			buildPhases = (
+				8AE80A6F274147AA009B5717 /* Sources */,
+				8AE80A70274147AA009B5717 /* Frameworks */,
+				8AE80A71274147AA009B5717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE80A75274147AA009B5717 /* PBXTargetDependency */,
+			);
+			name = "BSP Run Four SeasonsUITests";
+			productName = "BSP Run Four SeasonsUITests";
+			productReference = 8AE80A73274147AA009B5717 /* BSP Run Four SeasonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AE80A4B274147AA009B5717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8AE80A52274147AA009B5717 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					8AE80A68274147AA009B5717 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8AE80A52274147AA009B5717;
+					};
+					8AE80A72274147AA009B5717 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8AE80A52274147AA009B5717;
+					};
+				};
+			};
+			buildConfigurationList = 8AE80A4E274147AA009B5717 /* Build configuration list for PBXProject "BSP Run Four Seasons" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AE80A4A274147AA009B5717;
+			productRefGroup = 8AE80A54274147AA009B5717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AE80A52274147AA009B5717 /* BSP Run Four Seasons */,
+				8AE80A68274147AA009B5717 /* BSP Run Four SeasonsTests */,
+				8AE80A72274147AA009B5717 /* BSP Run Four SeasonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AE80A51274147AA009B5717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80A63274147AA009B5717 /* LaunchScreen.storyboard in Resources */,
+				8AE80A60274147AA009B5717 /* Assets.xcassets in Resources */,
+				8AE80A5E274147AA009B5717 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80A67274147AA009B5717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80A71274147AA009B5717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AE80A4F274147AA009B5717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80A57274147AA009B5717 /* AppDelegate.swift in Sources */,
+				8AE80A8B27414E3D009B5717 /* climateViewController.swift in Sources */,
+				8AE80A59274147AA009B5717 /* SceneDelegate.swift in Sources */,
+				8AE80A8927414E1F009B5717 /* runTypesViewController.swift in Sources */,
+				8AE80A8727414DDF009B5717 /* resultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80A65274147AA009B5717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80A6E274147AA009B5717 /* BSP_Run_Four_SeasonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80A6F274147AA009B5717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80A78274147AA009B5717 /* BSP_Run_Four_SeasonsUITests.swift in Sources */,
+				8AE80A7A274147AA009B5717 /* BSP_Run_Four_SeasonsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AE80A6B274147AA009B5717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AE80A52274147AA009B5717 /* BSP Run Four Seasons */;
+			targetProxy = 8AE80A6A274147AA009B5717 /* PBXContainerItemProxy */;
+		};
+		8AE80A75274147AA009B5717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AE80A52274147AA009B5717 /* BSP Run Four Seasons */;
+			targetProxy = 8AE80A74274147AA009B5717 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AE80A5C274147AA009B5717 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE80A5D274147AA009B5717 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AE80A61274147AA009B5717 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE80A62274147AA009B5717 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AE80A7B274147AA009B5717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AE80A7C274147AA009B5717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AE80A7E274147AA009B5717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K264K6V9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BSP Run Four Seasons/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gustavo-Koglin.BSP-Run-Four-Seasons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AE80A7F274147AA009B5717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K264K6V9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BSP Run Four Seasons/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gustavo-Koglin.BSP-Run-Four-Seasons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8AE80A81274147AA009B5717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K264K6V9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gustavo-Koglin.BSP-Run-Four-SeasonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSP Run Four Seasons.app/BSP Run Four Seasons";
+			};
+			name = Debug;
+		};
+		8AE80A82274147AA009B5717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K264K6V9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gustavo-Koglin.BSP-Run-Four-SeasonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSP Run Four Seasons.app/BSP Run Four Seasons";
+			};
+			name = Release;
+		};
+		8AE80A84274147AA009B5717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K264K6V9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gustavo-Koglin.BSP-Run-Four-SeasonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BSP Run Four Seasons";
+			};
+			name = Debug;
+		};
+		8AE80A85274147AA009B5717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K264K6V9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gustavo-Koglin.BSP-Run-Four-SeasonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BSP Run Four Seasons";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AE80A4E274147AA009B5717 /* Build configuration list for PBXProject "BSP Run Four Seasons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80A7B274147AA009B5717 /* Debug */,
+				8AE80A7C274147AA009B5717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE80A7D274147AA009B5717 /* Build configuration list for PBXNativeTarget "BSP Run Four Seasons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80A7E274147AA009B5717 /* Debug */,
+				8AE80A7F274147AA009B5717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE80A80274147AA009B5717 /* Build configuration list for PBXNativeTarget "BSP Run Four SeasonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80A81274147AA009B5717 /* Debug */,
+				8AE80A82274147AA009B5717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE80A83274147AA009B5717 /* Build configuration list for PBXNativeTarget "BSP Run Four SeasonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80A84274147AA009B5717 /* Debug */,
+				8AE80A85274147AA009B5717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AE80A4B274147AA009B5717 /* Project object */;
+}
