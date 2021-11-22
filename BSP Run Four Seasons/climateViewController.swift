@@ -8,13 +8,13 @@ import UIKit
 
 class climateViewController: UIViewController, UITextFieldDelegate {
     
-//    Variable for the text field to recive the imput of the temprature
+//    Variable for the text field to recive the input of the temprature
     @IBOutlet weak var temperatureField: UITextField!
     
     
 //    Array to store cloths for displaying at the final screen
     var resultArray: [String] = []
-    
+//    Arry to store the run type from the previous viewController
     var runType: [String] = []
     
 //    Declaration of each variable of the climate statistics
@@ -27,6 +27,8 @@ class climateViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         temperatureField.delegate = self
     }
+//    function to only allow the user to input numbers and the sings in the temperature text field
+//    by creating a set with the allow characters and making it a super set of the typed characters
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let allowedCharacters = "-+1234567890."
@@ -112,6 +114,8 @@ class climateViewController: UIViewController, UITextFieldDelegate {
 //        converting the value from the temperature field from text to a double
         var tempValue = Double(temperatureField.text!)
         
+//        functio to check which type of run the runType array contains and depending of the type it will
+//        add 2, subtract 2 or maintain value of tempValue
         func runTemperatureModify(){
             if runType.contains("speed"){
                 return tempValue = tempValue! + 2
@@ -276,10 +280,11 @@ class climateViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
-//        activating all the cloths functions from above
+//        when the user do not enter any value in the temperature it will print a message to the result text label
         if temperatureField.text == "" {
             resultArray.append("Please enter the temperature value")
         }
+//        when the user enter a valid temperature it will activate all the clothes functions
         else if (tempValue! < 41 && tempValue! > -26){
             runTemperatureModify()
             sunGlasses()
@@ -292,12 +297,13 @@ class climateViewController: UIViewController, UITextFieldDelegate {
             tShirt()
             longSleeveShirt()
         }
+//        when the temperature is not valid it will print a message to the result text label warning that it is not valid temperature
         else{
             resultArray.append("Please enter a valid temperature.")
         }
     }
     
-//    Function to when the user clicks outside of the keyboard when writing in the textfield the keyboard disapear
+//    Function to when the user clicks outside of the keyboard when writing in the textfield the keyboard disappear
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         temperatureField.resignFirstResponder()
     }

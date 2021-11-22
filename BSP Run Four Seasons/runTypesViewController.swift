@@ -15,6 +15,8 @@ class runTypesViewController: UIViewController {
         super.viewDidLoad()
         
     }
+//    function to add a string to the array of the next viewController by geting the ID of the segue
+//    that is linked with the button pressed with the run type selected by the user
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "speedSegue"{
             let destinationController = segue.destination as! climateViewController
